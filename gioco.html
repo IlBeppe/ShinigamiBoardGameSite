@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+  <title> Shinigami </title>
+  <link rel="shortcut icon" href="favicon.ico"/> 
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <link href="./css/lightcase.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="./jQuery/jquery.events.touch.js"></script>
+  <script type="text/javascript" src="./js/lightcase.js" ></script>
+  <script type="text/javascript" src="./js/app.js" ></script>
+
+</head>
+
+<body >
+  <div class="full-view">
+    <header>
+      <frameset height="100%" ><img class="img-responsive p-0" src="img/sfondologo.jpg"/></frameset>
+
+    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="843.13">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+
+            <!-- <li class="active"><a href="gioco.html">Gioco</a></li> -->
+            <li><a href="#card-preparazione">Preparazione</a></li>
+            <li><a href="#card-turno">Turno</a></li>
+            <li><a href="#card-tessere">Tessere</a></li>
+            <li><a href="#card-mercati">Mercati</a></li>
+            <li><a href="#card-carte">Carte</a></li>
+            <li><a href="#card-schede">Schede</a></li>
+
+
+          </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    </header>
+
+
+    <div class="container-fluid">
+
+<!--Preparazione-->
+      <div class="row">
+ <div class="col-xs-12  col-md-10 col-md-offset-1 card text-center hover-hand" data-toggle="collapse" data-target="#preparazione" id="card-preparazione">
+          <div class="card-header">
+            <h3 class="font-title resize">Preparazione</h3>
+            <h3 class="font">Metti in ordine tutto per cominciare la partita!</h3>
+          </div>
+
+          </div>
+          </div>
+
+          <div id="preparazione" class="collapse lamincard">
+          <div class="row">
+          <div class="font col-xs-12 col-md-8">
+          <h1 class="font-title">Consegna del Death Note</h1>
+<p> Ad inizio partita, vanno creati tanti mazzetti quanti sono
+i giocatori, ogni mazzetto deve contenere:<ul>
+<li>Una tessera DN (coperta)</li>
+<li>Due carte DN (coperte)</li>
+</ul></p>
+</div>
+<div class="col-md-4"><img class="img-responsive" src="img/sfondologo.jpg"/></div>
+</div>
+<div class="row">
+<div class="font col-xs-12 col-md-8">
+<p>
+<b>N.B: Il mazzetto che contiene la Tessera DN piena
+deve contenere anche la Carta DN piena. <br>
+Deve esserci solo un mazzetto del genere in gioco a partita </b><br></p>
+<p>Dopo aver mescolato i mazzetti, ogni giocatore ne
+riceve uno, e decide se depositare la propria Tessera DN
+sullo slot Personale o sullo slot Appartamento della propria
+Scheda del Giocatore.
+</p>
+</div>
+</div>
+<div class="row">
+<div class="font col-xs-12 col-md-6">
+          <h1 class="font-title">Consegna inventari</h1>
+          <p>A inizio partita, ogni giocatore riceve inoltre:<ul>
+<li>La Scheda del Giocatore</li>
+<li>La Scheda di Classe: Cittadino</li>
+<li>Tutte le Carte Nome del proprio colore</li>
+<li>La Tessera Nome del proprio colore</li>
+<li>La pedina del proprio colore</li>
+<li>Una Carta Obiettivo pescata a caso tra le 8 disponibili</li>
+</ul>
+</p>
+<p>
+<b>N.B: la Carta Obiettivo Light deve essere in gioco durante ogni partita</b>
+</p>
+</div>
+<div class="col-md-6"><img class="img-responsive pos-right" src="img/SchedadelGiocatorePiena.png"/></div>
+</div>
+</div>
+
+<!--Turno-->
+
+  <div class="row">
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center hover-hand" data-toggle="collapse" data-target="#turno" id="card-turno">
+          <div class="card-header">
+            <h3 class="font-title resize">Turno</h3>
+            <h3 class="font">Come si svolge il turno e il turno della morte</h3>
+          </div>
+          </div>
+
+          </div>
+           <div id="turno" class="collapse lamincard">
+           <h1 class="font-title">Turno standart</h1>
+           <div class="font">
+           <p>Ogni giocatore, durante il proprio turno:<ul>
+
+<li>Lancia il dado e sposta la sua pedina per un numero di
+caselle pari o inferiore al risultato.Non può evitare di
+spostare la propria pedina, anche nel caso esca 1 come
+risultato.</li><br>
+
+<li>Può compiere azioni di classe, cambiare classe, comprare
+oggetti, depositare e/o ritirare oggetti dalle slot a cui ha
+accesso,</li></ul>
+
+<h1 class="font-title">Turno della morte</h1> (solo dal terzo giro in poi)
+<p class="font">
+Ogni fine turno standard vi è il giro della morte,
+tutti i giocatori consegnano una Carta DN ed una Carta Nome
+al giocatore che ha appena concluso il turno standard.<br><br>
+
+Il giocatore controlla tutte le carte ricevute e le riconsegna
+ai proprietari originali, SOLO allora dichiarerà se ci sono stati
+cambiamenti seguendo questi tre casi :<ol><br>
+
+<li style="color:red"><span style="color:black"> Se il giocatore riceve solo carte DN vuote dichiara
+il turno della morte finito.</span></li><br>
+<li style="color:red"><span style="color:black"> Se il giocatore riceve la Carta DN piena accompagnata
+da una Carta Nome corrispondente alla propria Tessera Nome
+attuale, a fine turno il giocatore si dichiara eliminato, perde
+tutti gli oggetti di ogni inventario, ricomincia dalla casella
+START e cambia nome.</span></li><br>
+<li style="color:red"><span style="color:black">Se il giocatore riceve la Carta DN piena accompagnata da
+una Carta Nome che non corrisponde alla propria Tessera
+Nome attuale, mostra a tutti i giocatori l'incongruenza e cambia Tessera Nome,tutte le
+Carte DN e le Tessere DN vengono rimescolate e ridistribuite come ad inizio
+partita.</span></li>
+</ol>
+</p>
+</div>
+  </div>
+
+<!--Tessere-->
+
+  <div class="row">
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center hover-hand" data-toggle="collapse" data-target="#tessere" id="card-tessere">
+          <div class="card-header">
+            <h3 class="font-title resize">Tessere</h3>
+            <h3 class="font">i 5 tipi di Tessere del gioco</h3>
+          </div>
+          </div>
+          </div>
+<!--Tessere collapse-->
+
+          <div id="tessere" class="collapse lamincard">
+
+    <div class="row">
+
+    <div class="col-xs-12 col-md-4 p-25">
+    <h1 class="font-title text-center p-25">Tessere Oggetto</h1>
+    <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+    <img class="img-responsive" src="img/Mela.jpg"/>
+    </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4 p-25">
+      <h1 class="font-title text-center p-25">Tessere Denaro</h1>
+       <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+      <img class="img-responsive" src="img/Denaro.jpg"/>
+    </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4 p-25">
+      <h1 class="font-title text-center p-25">Tessere DN</h1>
+       <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+      <img class="img-responsive" src="img/DeathNote.jpg"/>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="row">
+
+    <div class="col-xs-12 col-md-4 col-md-offset-1 p-25">
+    <h1 class="font-title text-center p-20">Tessere Nome</h1>
+     <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+   <img class="img-responsive" src="img/TesseraNomeFronteAzzurro.jpg"/>
+   </div>
+   </div>
+
+   <div class="col-xs-12 col-md-4 col-md-offset-2 p-25">
+   <h1 class="font-title text-center p-20">Tessere Morte</h1>
+    <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+   <img class="img-responsive" src="img/TesseraMorteFronte.jpg"/>
+   </div>
+   </div>
+
+   </div>
+
+   </div>
+
+<!--Mercati-->
+
+           <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1  card  text-center hover-hand" data-toggle="collapse" data-target="#mercati" id="card-mercati">
+          <div class="card-header">
+            <h3 class="font-title resize">Mercati</h3>
+          <h3 class="font">Tutti gli oggetti acquistabili in partita</h3>
+        </div>
+        </div>
+        </div>
+
+        <div id="mercati" class="collapse lamincard">
+
+        <div class="row">
+
+         <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center">Mercato</h1>
+        </div>
+
+        <div class="col-xs-12 col-md-4 b-20">
+        <h1 class="font-title text-center">Mela</h1>
+         <div class="col-xs-8 col-xs-offset-2  col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Mela.jpg"/>
+        </div>
+        </div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Testamento</h1>
+         <div class="col-xs-8 col-xs-offset-2 col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Testamento.jpg"/>
+        </div>
+        </div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Cassaforte</h1>
+         <div class="col-xs-8 col-xs-offset-2  col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Cassaforte.jpg"/>
+        </div>
+        </div>
+        </div>
+
+        <div class="row">
+
+        <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center">Ghetto</h1>
+        </div>
+
+
+        <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Grimaldello</h1>
+         <div class="col-xs-8 col-xs-offset-2  col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Grimaldello.jpg"/>
+       
+        </div>
+        </div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Esplosivo</h1>
+        <div class="col-xs-8 col-xs-offset-2  col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Esplosivo.jpg"/>
+        
+        </div>
+        </div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Badge Falsificato</h1>
+        <div class="col-xs-8 col-xs-offset-2  col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Badge.jpg"/>
+        </div>
+        </div>
+
+        </div>
+
+          <p class="font text-center card-rounded card-black">
+          Queste Tessere oggetto sono disponibili SOLO nella Casella Ghetto!<br>
+          Solo chi possiede la Scheda di Classe Criminale può utilizzare questo tipo di Tessere Oggetto e accedere
+        alla Casella Ghetto, nonostante ciò è consentito mantenere queste Tessere Oggetto anche dopo il cambio della propria Scheda di Classe.</p>
+
+  </div>
+
+<!--Carte-->
+
+  <div class="row">
+
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center hover-hand" data-toggle="collapse" data-target="#carte" id="card-carte">
+          <div class="card-header">
+            <h3 class="font-title resize">Carte</h3>
+            <h3 class="font">Carte Obiettivo e Carte del Turno della Morte!</h3>
+          </div>
+          </div>
+          </div>
+          <div id="carte" class="collapse lamincard">
+              <div class="row">
+        <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center m-0">Carte del Turno della Morte</h1>
+        </div>
+
+        </div>
+          <div class="row">
+          <div class="col-xs-12 col-md-4 col-md-offset-1">
+          <h1 class="font-title b-size p-25">Carte Nome</h1>
+           <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+          <img class="img-responsive" src="img/CartanomeAzzurra.jpg" data-toggle="modal" data-target="#CarteNome"/>
+          </div>
+          </div>
+
+               <div class="col-xs-12 col-md-4 col-md-offset-2">
+          <h1 class="font-title b-size p-25">Carte DN</h1>
+           <div class="col-xs-12 col-md-10 p-25">
+          <img class="img-responsive" src="img/CartaDNRetro.jpg" data-toggle="modal" data-target="#CarteDN"/>
+          </div>
+          </div>
+          </div>
+
+          <div class="row">
+        <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center">Carte Obiettivo</h1>
+        </div>
+        <div class="row cover">
+
+<!--Light-->
+
+        <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">Light</h1>
+        <img class="img-responsive hover-hand" src="img/ObiettivoLight.jpg" data-toggle="modal" data-target="#Light"/>
+        </div>
+
+<!--Light Modal-->
+<div class="modal fade" id="Light" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-3 col-md-offset-1 onlyfull mbox-bottom">
+             <img src="img/ObiettivoLight.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-3 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header">
+              <h1 class="font-title-box text-center">Light</h1></div>
+              <div class="box-content">
+              <h1 class="custom-font-title">Rendere Giustizia</h1><br>
+              <p class="font-white">Per completare questo obiettivo devi eliminare due giocatori che possiedono la Scheda di Classe CRIMINALE o che sono considerati EX CRIMINALE e possedere la Tessera DN Piena.</div>
+              <div class="box-bottom">
+              <p class="font-white">N.B.: I giocatori che hai eliminato devono scoprire le loro Tessere Morte per verificare che le eliminazioni siano accadute realmente</p></div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+<!--Misa-->
+
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">Misa</h1>
+        <img class="img-responsive hover-hand" src="img/ObiettivoMIsa.jpg" data-toggle="modal" data-target="#Misa"/>
+        </div>
+
+<!--Misa Misa modal-->
+
+<div class="modal fade" id="Misa" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-3 col-md-offset-1 onlyfull mbox-bottom">
+             <img src="img/ObiettivoMisa.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-3 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header">
+              <h1 class="font-title-box text-center">Misa</h1>
+              </div>
+              <div class="box-content">
+              <h1 class="custom-font-title">Elimina Elle</h1>
+              <p class="font-white">Per completare questo obiettivo devi eliminare il giocatore che possiede la Carta Obiettivo Elle, questo una volta eliminato, dichiarerà la sua Carta Obiettivo (come descritto sulla Carta Obiettivo Elle)
+              così da fornire la prova schiacciante della tua vittoria! Light ne sarà lieto. 
+              </p>
+              <h1 class="custom-font-title">Killer Spietato</h1>
+              <p class="font-white">Per completare questo obiettivo devi eliminare cinque giocatori e possedere la Tessera DN Piena.</div>
+              <div class="box-bottom">
+              <p class="font-white">N.B.: I giocatori che hai eliminato devono scoprire le loro Tessere Morte per verificare che le eliminazioni siano accadute realmente</p></div>
+
+            </div>
+          </div>
+          </div>
+        </div>
+
+<!--Mikami-->
+
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">Mikami</h1>
+        <img class="img-responsive hover-hand" src="img/ObiettivoMikami.jpg" data-toggle="modal" data-target="#Mikami"/>
+        </div>
+
+<!--Mikami modal-->
+
+<div class="modal fade" id="Mikami" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-3 col-md-offset-1 onlyfull mbox-bottom">
+             <img src="img/ObiettivoMikami.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-3 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header">
+              <h1 class="font-title-box text-center">Mikami</h1>
+              </div>
+              <div class="box-content">
+              <h1 class="custom-font-title">Killer Spietato</h1><br>
+              <p class="font-white">Per completare questo obiettivo devi eliminare quattro giocatori e possedere la Tessera DN Piena.</p></div>
+              <div class="box-bottom">
+              <p class="font-white">
+              N.B.: I giocatori che hai eliminato devono scoprire le loro Tessere Morte per verificare che le eliminazioni siano accadute realmente</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+<!--Takada-->
+
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">Takada</h1>
+        <img class="img-responsive hover-hand" src="img/ObiettivoTakada.jpg" data-toggle="modal" data-target="#Takada"/>
+        </div>
+        </div>
+
+<!--Takada modal-->
+
+<div class="modal fade" id="Takada" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-3 col-md-offset-1 onlyfull mbox-bottom">
+             <img src="img/ObiettivoTakada.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-3 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header">
+              <h1 class="font-title-box text-center">Takada</h1>
+              </div>
+              <div class="box-content">
+              <h1 class="custom-font-title">Elimina Mello</h1>
+              <p class="font-white">Per completare questo obiettivo devi eliminare il giocatore che possiede la Carta Obiettivo Mello, questo una volta eliminato, dichiarerà la sua Carta Obiettivo (come descritto sulla Carta Obiettivo Mello)
+              così da fornire la prova schiacciante della tua vittoria! 
+              </p>
+              <h1 class="custom-font-title">Profitto Personale</h1>
+              <p class="font-white">Per completare questo obiettivo devi accumulare 2000&#163 sommando tutte le Tessere Denaro che possiedi in tutte le tue Slot Inventario e possedere la Tessere DN Piena.<br></div>
+              <div class="box-bottom">
+              <p class="font-white">N.B.: Basta completare uno solo di questi due possibili obiettivi per dichiarare la propria vittoria.</p>
+              </div>
+
+            </div>
+          </div>
+          </div>
+        </div>
+<!--Elle-->
+
+              <div class="row">
+        <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">L</h1>
+        <img class="img-responsive hover-hand" src="img/ObiettivoElle.jpg" data-toggle="modal" data-target="#Elle"/>
+        </div>
+<!--Elle modal-->
+
+  <div class="modal fade" id="Elle" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-3 col-md-offset-1 onlyfull mbox-bottom">
+             <img src="img/ObiettivoElle.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-3 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header">
+              <h1 class="font-title-box-yellow text-center">L</h1>
+              </div>
+              <div class="box-content">
+              <h1 class="custom-font-title">Cattura Kira</h1>
+              <p class="font-white">Per completare questo obiettivo devi trovare la Tessera DN Piena attraverso l'azione PERQUISIZIONE o RETATA della Scheda di Classe INVESTIGATORE oppure utilizzando Tessere Oggetto del Ghetto.<br>
+              Se possiedi la Tessera DN Piena a causa della distribuzione casuale, puoi rinunciarvi durante il tuo turno
+              per ridistribuirla tra i giocatori.
+              </p>
+              </div>
+              <div class="box-bottom">
+              <p class="font-white">
+              Se durante la partita vieni eliminato, dichiara pubblicamente la tua carta obiettivo, pescane una nuova e sostituiscila con questa.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+<!--Mello-->
+
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">M</h1>
+        <img class="img-responsive hover-hand" src="img/ObiettivoMello.jpg" data-toggle="modal" data-target="#Mello"/>
+        </div>
+<!--Mello modal-->
+
+          <div class="modal fade" id="Mello" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-3 col-md-offset-1 onlyfull mbox-bottom">
+             <img src="img/ObiettivoMello.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-3 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header">
+              <h1 class="font-title-box-yellow text-center">M</h1>
+              </div>
+              <div class="box-content">
+              <h1 class="custom-font-title">Ruba il DeathNote</h1>
+              <p class="font-white">Per completare questo obiettivo devi ottenere la Tessera DN Piena attraverso l'azione RAPINARE della Scheda di Classe CRIMINALE oppure utilizzando Tessere Oggetto del Ghetto.<br>
+              Se possiedi la Tessera DN Piena a causa della distribuzione casuale, puoi rinunciarvi durante il tuo turno
+              per ridistribuirla tra i giocatori.
+              </p>
+              </div>
+              <div class="box-bottom">
+              <p class="font-white">
+              Se durante la partita vieni eliminato, dichiara pubblicamente la tua carta obiettivo, pescane una nuova e sostituiscila con questa.</p></div>
+              
+            </div>
+           </div>
+          </div>
+         </div>
+
+<!--Near-->
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">N</h1>
+        <img class="img-responsive hover-hand" src="img/ObiettivoNear.jpg" data-toggle="modal" data-target="#Near"/>
+        </div>
+<!--Near modal-->
+
+          <div class="modal fade" id="Near" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-3 col-md-offset-1 onlyfull mbox-bottom">
+             <img src="img/ObiettivoNear.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-3 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header">
+              <h1 class="font-title-box-yellow text-center">N</h1>
+              </div>
+              <div class="box-content">
+              <h1 class="custom-font-title">Cattura Light </h1>
+              <p class="font-white">Per completare questo obiettivo devi trovarti sulla stessa casella di un giocatore,durante il tuo turno, e ipotizzare pubblicamente che possegga la Carta Obiettivo "Light", controlla la sua Carta Obiettivo senza che gli altri giocatori ne vengano al corrente.Se la tua ipotesi è:</p>
+              <ul class="font-white">
+                <li>CORRETTA, hai vinto la partita!</li>
+                <li>ERRATA, pesca una carta obiettivo nuova e sostituiscila con questa.</li>
+              </ul>
+              </div>
+              <div class="box-bottom">
+              <p class="font-white">
+              Se durante la partita vieni eliminato, dichiara pubblicamente la tua Carta Obiettivo, pescane una nuova e sostituiscila con questa.</p></div>
+              
+            </div>
+           </div>
+          </div>
+         </div>
+
+<!--Higuchi-->
+
+         <div class="col-xs-12 col-md-3 p-25 hover-hand">
+        <h1 class="font-title text-center">Higuchi</h1>
+        <img class="img-responsive hover-hand" src="img/ObiettivoHiguchi.jpg" data-toggle="modal" data-target="#Higuchi"/>
+        </div>
+
+<!--Higuchi modal-->
+
+<div class="modal fade" id="Higuchi" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-3 col-md-offset-1 onlyfull mbox-bottom">
+             <img src="img/ObiettivoHiguchi.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-3 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header img-responsive">
+              <h1 class="font-title-box text-center">Higuchi</h1></div>
+              <div class="box-content img-responsive">
+              <h1 class="custom-font-title">Profitto Personale</h1>
+              <p class="font-white">Per completare questo obiettivo devi accumulare 1500&#163 sommando tutte le Tessere Denaro che possiedi in tutte le tue Slot Inventario e possedere la Tessere DN Piena.</p>
+              </div>
+              <div class="box-bottom img-responsive"><p class="box-fondo">Testo per spaziare questo dannato background così che venga giusto il bottom </p>
+              </div>
+  
+
+            
+
+            </div>
+           </div>
+          </div>
+         </div>
+
+
+
+
+
+        </div>
+        </div>
+
+        <p class="font text-center card-black card-rounded">
+          Ad obiettivo raggiunto mostra la tua Carta Obiettivo durante il tuo turno (prima del tuo turno della morte) per dichiarare la tua vittoria.<br>
+          N.B: La Carta Obiettivo Light deve essere presente in gioco ad ogni partita.<br>
+          Se il tuo gruppo di giocatori ha meno di otto partecipanti, prima di distribuire le Carte Obiettivo togli dal mazzo la Carta Obiettivo Light, mischia il mazzo, pesca il numero di Carte Obiettivo che ti serve per far giocare tutti meno uno, aggiungi a questo nuovo mazzo la Carta Obiettivo Light, mischia nuovamente il mazzo e distribuisci le Carte Obiettivo ai vari giocatori</p>
+
+  </div>
+
+
+  <div class="row">
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card bottom-card text-center hover-hand" data-toggle="collapse" data-target=#schede id="card-schede">
+          <div class="card-header">
+            <h3 class="font-title resize">Schede</h3>
+            <h3 class="font">Scheda di Classe e Schede del Giocatore</h3>
+          </div>
+          </div>
+          </div>
+
+
+            <div id="schede" class="collapse lamincard">
+            <div class="row">
+             <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center">Schede di Classe</h1>
+        </div>
+
+<!--Cittadino-->
+
+               <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Cittadino</h1>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive hover-hand" src="img/SchedaCittadino.jpg" data-toggle="modal" data-target="#Cittadino"/>
+        </div>
+</div>
+
+<!--Cittadino modal-->
+
+          <div class="modal fade" id="Cittadino" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-4 col-md-offset-1 onlyfull mbox-bottom">
+             <img class="img-responsive" src="img/SchedaCittadino.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-1 mbox-card-top">
+            <div class="box-card">
+              <h1 class="font-title-box text-center">Azioni e Condizioni</h1>
+              <h2 class="custom-font-title">Cambiare Classe</h2>
+              <p class="font-white">Una volta per turno puoi sostituire la tua Scheda di Classe Cittadino con la Scheda di Classe:</p>
+              <ul class="font-white">
+                <li>Studente, se ti trovi sulla casella Scuola</li>
+                <li>Impiegato, se ti trovi sulla casella Ufficio</li>
+                <li>Magistrato, se ti trovi sulla casella Tribunale</li>
+                <li>Criminale, indipendentemente dalla tua posizione sulla mappa di gioco</li>
+                <li>Investigatore, se ti trovi sulla casella Stazione di Polizia</li>
+              </ul>
+              <h2 class="custom-font-title">Tornare Cittadino</h2>
+              <p class="font-white">A meno che tu non abbia la Scheda di Classe Criminale, puoi riscambiare la tua attuale Scheda di Classe con la Scheda di Classe Cittadino, una sola volta per turno.<br>
+              Non puoi usare quest'azione se hai precedentemente utilizzato Cambiare Classe nel tuo turno.
+              </p>
+
+            </div>
+          </div>
+          </div>
+
+        </div>
+
+<!--Investigatore-->
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Investigatore</h1>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive hover-hand" src="img/SchedaInvestigatore.jpg" data-toggle="modal" data-target="#Investigatore"/>
+        </div>
+</div>
+
+<!--Investigatore Modal-->
+
+         <div class="modal fade" id="Investigatore" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-4 col-md-offset-1 onlyfull mbox-bottom">
+             <img class="img-responsive" src="img/SchedaInvestigatore.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-1 mbox-card-top">
+            <div class="box-card">
+              <h1 class="font-title-box text-center">Azioni e Condizioni</h1>
+              <h2 class="custom-font-title">Perquisizione</h2>
+              <p class="font-white">Controlli l'inventario personale di un giocatore sulla tua stessa casella, nel caso possegga la Scheda di Classe Criminale guadagni 500&#163 e si attiva la sua condizione Catturato.</p>
+              <h2 class="custom-font-title">Retata</h2>
+              <p class="font-white">Controlli il contenuto delle/a slot:</p>
+              <ul class="font-white">
+                <li>Appartamento, se ti trovi sulla casella Condominio;</li>
+                <li>Studente, se ti trovi sulla casella Scuola;</li>
+                <li>Impiegato, se ti trovi sulla casella Ufficio;</li>
+                <li>Inventario Personale di un giocatore che si trova sulla casella Ghetto;</li>
+              </ul>
+              <p class="font-white">di un giocatore.<br>
+              N.B.: Utilizzata quest'azione scambia la Scheda Investigatore con la Scheda Cittadino
+              </p>
+              <h2 class="custom-font-title">Numero chiuso</h2>
+               <p class="font-white">Possono esserci un massimo di due Schede Investigatore in gioco contemporaneamente.</p>
+            </div>
+          </div>
+          </div>
+
+        </div>
+
+<!--Criminale-->
+
+        <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Criminale</h1>
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive hover-hand" src="img/SchedaCriminale.jpg" data-toggle="modal" data-target="#Criminale"/>
+        </div>
+</div>
+        </div>
+
+<!--Criminale Modal-->
+
+     <div class="modal fade" id="Criminale" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-4 col-md-offset-1 onlyfull mbox-bottom">
+             <img class="img-responsive" src="img/SchedaCriminale.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-1 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header">
+              <h1 class="font-title-box text-center">Azioni e Condizioni</h1>
+            </div>
+            <div class="box-content">
+              <h2 class="custom-font-title">Rapinare</h2>
+              <p class="font-white">Rubi gli oggetti che desideri dall'inventario personale di un personaggio che si trova sulla tua stessa casella, e/o guardi la sua Tessera Nome, ritiri il dado.<br>
+              Non puoi usare Rapina sulle caselle:</p>
+              <ul class="font-white">
+                <li>Anagrafe</li>
+                <li>Tribunale</li>
+                <li>Stazione di Polizia</li>
+                <li>Scuola</li>
+                <li>Ufficio</li>
+              </ul>
+              <h2 class="custom-font-title">Catturato</h2>
+              <p class="font-white">Questa condizione si attiva nel momento in cui un giocatore che possiede la Scheda di Classe Investigatore usa l'azione Perquisizione ai tuoi danni.<br>
+              Perdi tutte le tue Tessere Oggetto( l'Investigatore controlla la Tessera DN, nel caso sia piena viene ridistribuita come ad inizio partita, nel caso sia vuota quella Tessera Oggetto non subisce alcuna modifica ).<br>
+              Riparti dalla Stazione di Polizia e la tua Tessera Nome rimane posizionata scoperta sulla casella Anagrafe fino a che non la sostituisci come descritto nella sezione Tessere Nome.<br>
+              Fintanto che la tua Tessera Nome è posizionata scoperta sulla casella anagrafe vieni considerato EX CRIMINALE ai fini della Carta Obiettivo Light. 
+              </p>
+              <h2 class="custom-font-title">Tornare Cittadino</h2>             
+               <p class="font-white">Come descritto nella Scheda di Classe Cittadino chi possiede questa Scheda di Classe non può recuperare la Scheda di Classe Cittadino ( e quindi non può ottenere nessuna delle altre Schede di Classe, accessibili attraverso l'azione Cambiare Classe della Scheda di Classe Cittadino ).</p></div>
+               <div class="box-bottom">
+               <p class="font-white">Chi possiede la Scheda di Classe Criminale deve recarsi sulla casella Anagrafe e pagare la cauzione di 300&#163 con le sue Tessere Denaro per poter recuperare la Scheda di Classe Cittadino.
+              </p>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+
+   <p class="font text-center card-black card-rounded">
+             Deposita la tua Tessera Nome, coperta, sullo Slot di Classe quando possiedi una di queste tre Schede di Classe.<br>Se sei considerato EX CRIMINALE, la Tessera Nome deve rimanere scoperta sulla casella Anagrafe fino a che non la cambi come descritto nella sezione Tessere Nome</p>
+
+<!--Magistrato-->
+
+                <div class="row">
+               <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Magistrato</h1>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive hover-hand" src="img/SchedaMagistrato.jpg" data-toggle="modal" data-target="#Magistrato"/>
+        </div>
+</div>
+
+<!--Magistrato Modal-->
+
+         <div class="modal fade" id="Magistrato" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-4 col-md-offset-1 onlyfull mbox-bottom">
+             <img class="img-responsive" src="img/SchedaMagistrato.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-1 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header">
+              <h1 class="font-title-box text-center">Azioni e Condizioni</h1></div>
+              <div class="box-content">
+              <h2 class="custom-font-title">Lavoro</h2>
+              <p class="font-white">A fine turno pesca 200&#163 ( Tessere Denaro ) e depositali sulla tua Slot di Classe.<br>
+              Non puoi usare quet'azione se la tua Slot di Classe è occupata da Tessere Oggetto diverse dalle Tessere Denaro. Controlli l'inventario personale di un giocatore sulla tua stessa casella, nel caso possegga la Scheda di Classe Criminale guadagni 500&#163 e si attiva la sua condizione Catturato.</p>
+              <h2 class="custom-font-title">Controllo</h2>
+              <p class="font-white">Quando ti trovi sulla casella Tribunale, puoi controllare il contenuto tutte le Tessere Nome depositate nell'Albo dei Magistrati</p>
+              <h2 class="custom-font-title">Utilizzo Slot di Classe</h2>
+               <p class="font-white">Quando ti trovi sulla casella Tribunale, usa lo Slot di Classe per depositare e/o ritirare Tessere Oggetto, nel caso cambiassi Scheda di Classe tutte le Tessere Oggetto depositate in questo Slot andranno perse.</p></div>
+               <div class="box-bottom"><p class="font-white">
+               Non puoi cambiare Scheda di Classe fintanto che la Slot di Classe è occupata dalla Tessera DN</p>
+               </div>
+
+            </div>
+           </div>
+          </div>
+
+        </div>
+
+<!--Impiegato-->
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Impiegato</h1>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive hover-hand" src="img/SchedaImpiegato.jpg" data-toggle="modal" data-target="#Impiegato"/>
+        </div>
+</div>
+
+<!--Impiegato Modal-->
+
+         <div class="modal fade" id="Impiegato" role="dialog">
+          <div class="modal-dialog">
+          
+          <div class="col-xs-12 col-md-4 col-md-offset-1 onlyfull mbox-bottom">
+             <img class="img-responsive" src="img/SchedaImpiegato.jpg"/>
+             </div>
+          <div class="col-xs-12 col-md-1 col-md-offset-1 mbox-card-top">
+            <div class="box-card">
+            <div class="box-header">
+              <h1 class="font-title-box text-center">Azioni e Condizioni</h1></div>
+              <div class="box-content">
+              <h2 class="custom-font-title">Lavoro</h2>
+              <p class="font-white">Controlli l'inventario personale di un giocatore sulla tua stessa casella, nel caso possegga la Scheda di Classe Criminale guadagni 500&#163 e si attiva la sua condizione Catturato.</p>
+              <h2 class="custom-font-title">Controllo</h2>
+              <p class="font-white">Quando ti trovi sulla casella Tribunale, puoi controllare il contenuto tutte le Tessere Nome depositate nell'Albo dei Magistrati</p>
+              <h2 class="custom-font-title">Utilizzo Slot di Classe</h2>
+               <p class="font-white">Quando ti trovi sulla casella Tribunale, usa lo Slot di Classe per depositare e/o ritirare Tessere Oggetto, nel caso cambiassi Scheda di Classe tutte le Tessere Oggetto depositate in questo Slot andranno perse.</p></div>
+               <div class="box-bottom"><p class="font-white">
+               Non puoi cambiare Scheda di Classe fintanto che la Slot di Classe è occupata dalla Tessera DN</p>
+               </div>
+
+            </div>
+           </div>
+          </div>
+
+        </div>
+
+<!--Studente-->
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Studente</h1>
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive hover-hand" src="img/SchedaStudente.jpg" data-toggle="modal" data-target="#Studente"/>
+        </div>
+        </div>
+</div>
+
+<!--Scheda del Giocatore-->
+
+  <div class="row">
+             <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center">Scheda del Giocatore</h1>
+        </div>
+        <img class="img-responsive" src="img/SchedadelGiocatore.jpg"/>
+
+      </div>
+  </div>
+
+<!--SOCIAL FOOTER-->
+
+           <div class="row" , id="footer">
+      <div class="col-md-6 col-md-offset-3 ">
+        <ul class="list-inline text-center" , id="footerShareList">
+          <li>
+            <a id="twitter" href="https://twitter.com/share?url=https://www.shinigamiboardgame.com; text=Nice_Death_Note_based game_over_here; hashtags=Shinigami">
+              <i class="fa fa-twitter">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a id="facebook" href="http://www.facebook.com/sharer.php?u=https://www.shinigamiboardgame.com">
+              <i class="fa fa-facebook">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a id="google-plus" href="https://plus.google.com/share?url=https://www.shinigamiboardgame.com" target="_blank">
+              <i class="fa fa-google-plus">
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--FOOTERCOPYRIGHT-->
+
+      <div class="col-xs-12" , id="footerCopyR">
+        <div class="text-center ">
+          <p> &copy 2003 SHUEISHA.
+           All rights reserved Death Note.
+           All logos characters names and distinctive likeness
+           thereof are trademarks of SHUEISHA<br>
+           Site created by Giuseppe Manfredi and based on Bootstrap  </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
