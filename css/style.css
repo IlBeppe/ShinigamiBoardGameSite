@@ -454,18 +454,24 @@ cursor: url(./images/minidn.png),auto;
 */
 .box-card{
    width: 33%;
-   padding-top: 8%;
+   padding-top: 7%;
    padding-bottom: 3%;
    padding-left: 50px;
    padding-right:50px;
    display: inline-block;
    line-height: 1.75;
-   background-image: url(./images/BlackPageNoIcon.jpg);
+   /*background-image: url(./images/BlackPageNoIcon.jpg);
    background-size: contain;
-   background-repeat: no-repeat;
+   background-repeat: no-repeat;*/
    /*padding-top:2.500em;*/
    margin-bottom: 4.10em;
    background-size: 100% 100%;
+   position: relative;
+   background: black;
+}
+.content{
+   outline: 1px solid white;
+   outline-offset: 25px;
 }
 .box-fondo{
    color:#010101;
@@ -483,7 +489,6 @@ cursor: url(./images/minidn.png),auto;
    float: left;
    margin-left: 8%;
    margin-top: 1%;
-   position: absolute;
    position: fixed;
    top:1%;
 }
@@ -495,11 +500,9 @@ cursor: url(./images/minidn.png),auto;
 .indietro{
    font-size: 0.7em;
    opacity: 0.8;
-   float: center;
    color: grey;
    font-family: MATURASC;
    margin-top: 15%;
-   position: absolute;
    margin-left: 43%;
    position: fixed;
 }
@@ -547,6 +550,75 @@ cursor: url(./images/minidn.png),auto;
    margin-left:5%;
    margin-top:5%;
    margin-bottom: 1%;
+   position: relative;
    }
 
+/*background ghirigori*/
 
+/*Light-size*/
+
+.Teschio{
+   position: absolute;
+   top: 2px;
+   margin-left:26%;
+}
+.BL{
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+   width: 45px;
+
+}
+.BR{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+}
+.TL{
+   position: absolute;
+   top: 40px;
+   left: 20px;
+   width: 45px;
+
+}
+.TR{
+   position: absolute;
+   top: 40px;
+   right: 20px;
+   width: 45px;
+}
+
+/*background ghirigori mobile*/
+
+.Teschio-mobile{
+   position: absolute;
+   top: 2px;
+   margin-left:228px;
+}
+.BL-mobile{
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+   width: 45px;
+
+}
+.BR-mobile{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+}
+.TL-mobile{
+   position: absolute;
+   top: 40px;
+   left: 20px;
+   width: 45px;
+
+}
+.TR-mobile{
+   position: absolute;
+   top: 40px;
+   right: 20px;
+   width: 45px;
+}
